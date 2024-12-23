@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-Field::Field(int width, int height) : _width(width), _height(height), _cells(_width* _height, Cell::nan) { };
+Field::Field(int height, int width) : _height(height), _width(width), _cells(_width* _height, Cell::nan) { };
 
 Cell& Field::getCell(int i, int j) noexcept
 {
@@ -33,11 +33,10 @@ void Field::correction() noexcept
 //  Добавление нижней и верхней границ
 void Field::addBorders()
 {
-    for (size_t j = 0; j < _width; j++)
-    {
-        getCell(0, j) = Cell::solid;
-        getCell(_height - 1, j) = Cell::solid;
-    }
+    std::vector<Cell> border(_width, Cell::solid);
+    _cells.insert(_cells.begin(), border.begin(), border.end());
+    _cells.insert(_cells.end(), border.begin(), border.end());
+    _height += 2;
 }
 
 //  Вывод (для отладки)

@@ -5,13 +5,11 @@
 
 void ConsoleView::displayMessage(const std::string& message) const
 {
-    setlocale(LC_ALL, "Russian");
     std::cout << message << std::endl;
 }
 
 std::string ConsoleView::getUserInput(const std::string& prompt) const
 {
-    setlocale(LC_ALL, "Russian");
     std::cout << prompt;
     std::string input;
     std::getline(std::cin, input);
@@ -25,7 +23,6 @@ void ConsoleView::clearScreen() const
 
 std::vector<std::string> ConsoleView::getUserInputList(const std::string& prompt) const
 {
-    setlocale(LC_ALL, "Russian");
     std::cout << prompt;
     std::string input;
     std::getline(std::cin, input);

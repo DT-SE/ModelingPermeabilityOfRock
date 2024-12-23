@@ -136,13 +136,25 @@
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ConsoleView.cpp" />
+    <ClCompile Include="OpenCommand.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClearCommand.h" />
+    <ClInclude Include="CommandInterface.h" />
+    <ClInclude Include="CommandManager.h" />
     <ClInclude Include="Controller.h" />
+    <ClInclude Include="CorrectCommand.h" />
+    <ClInclude Include="CutCommand.h" />
     <ClInclude Include="DiagonalMatrix.h" />
+    <ClInclude Include="ExitCommand.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="FileCommand.h" />
+    <ClInclude Include="HelpCommand.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="ConsoleView.h" />
+    <ClInclude Include="PrintCommand.h" />
+    <ClInclude Include="SaveCommand.h" />
+    <ClInclude Include="Solver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

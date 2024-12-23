@@ -26,10 +26,10 @@ enum class Cell : uint8_t
  */
 class Field
 {
-    //Длинна строки или размер поля по X.
-    size_t _width;
     //Высота столбца или размер поля по Y.
     size_t _height;
+    //Длинна строки или размер поля по X.
+    size_t _width;
     //Массив ячеек поля
     std::vector<Cell> _cells;
 
@@ -38,7 +38,7 @@ public:
     /**
     * @brief Конструктор пустого поля
     */
-    Field(int width, int height);
+    Field(int height, int width);
 
     /**
     * @brief Обращается к ячейке на позиции (i, j) по ссылке

@@ -14,6 +14,9 @@
     <ClCompile Include="Controller.cpp">
       <Filter>MVC\Controller</Filter>
     </ClCompile>
+    <ClCompile Include="OpenCommand.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="MVC">
@@ -34,7 +37,13 @@
     <Filter Include="MVC\Model\Image">
       <UniqueIdentifier>{058d1562-01c8-416d-af18-c0507972811a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="DiagonalMatrix">
+    <Filter Include="MVC\Controller\Command">
+      <UniqueIdentifier>{0e19d16e-483b-4454-a544-0d634b1576f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MVC\Model\Solver">
+      <UniqueIdentifier>{3c4a50d7-9848-4f9d-913b-b27cec798eea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MVC\Model\DiagonalMatrix">
       <UniqueIdentifier>{bd9192c6-c0da-4265-898d-f91310df45a3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -52,7 +61,40 @@
       <Filter>MVC\Controller</Filter>
     </ClInclude>
     <ClInclude Include="DiagonalMatrix.h">
-      <Filter>DiagonalMatrix</Filter>
+      <Filter>MVC\Model\DiagonalMatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveCommand.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintCommand.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpCommand.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="FileCommand.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ExitCommand.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CutCommand.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CorrectCommand.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandManager.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandInterface.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearCommand.h">
+      <Filter>MVC\Controller\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver.h">
+      <Filter>MVC\Model\Solver</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

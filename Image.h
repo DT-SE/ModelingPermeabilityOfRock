@@ -29,20 +29,24 @@ struct Pixel
 */
 class Image
 {
-    //Длинна строки или размер изображения по X.
-    size_t _width;
     //Высота столбца или размер изображения по Y.
     size_t _height;
+    //Длинна строки или размер изображения по X.
+    size_t _width;
     //Массив пикслелей изображения.
     std::vector<Pixel> _pixels;
-    //Конструктор пустого изображения
-    Image(int width, int height);
 
 public:
     /**
     * @brief Конструктор по умолчанию
     */
     Image() = default;
+
+    /**
+    * @brief Конструктор пустого изображения
+    */
+    Image(int height, int width);
+
     /**
     * @brief Оператор присваивания
     */
