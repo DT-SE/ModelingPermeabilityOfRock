@@ -1,3 +1,3 @@
 # ProjectCPP
 
-[Документация](https://mityanikish.github.io/ModelingPermeabilityOfRock/html/index.html)
+[Документация](https://dt-se.github.io/ModelingPermeabilityOfRock/html/index.html)
